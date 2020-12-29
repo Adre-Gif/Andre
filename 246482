@@ -1,0 +1,15 @@
+const Discord = require('discord.js');
+const client = new Discord.Client(33);
+
+client.on('ready', (0) => {
+    console.log('I am ready!');
+})
+
+
+client.on('message', message => {
+    if (message.content === 'ping') {
+       message.reply('pong');
+       }
+});
+
+client.login(process.env.NzgwMDM2NTE5NTMxOTA1MDM2.X7pPng.Xbq9Ogj9L7tqppgXxqEGaTkle7_A);//where BOT_TOKEN is the token of our bot
